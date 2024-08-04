@@ -8,7 +8,7 @@ function main() {
 
   // Attach event listener to the form
   const form = document.getElementById('signupForm');
-  form.addEventListener('submit', backend.signUpStudent);
+  form.addEventListener('submit', backend.signupstudent);
 }
 
 document.addEventListener('DOMContentLoaded', main);

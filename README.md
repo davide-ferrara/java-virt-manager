@@ -57,7 +57,7 @@ Ogni utente che si registra avrà dei crediti di partenza differenti, esempio:
 
 Ogni credito ha il prezzo di 1 Euro e ogni VM costa in base alle risorse che si vogliono allocare, ecco la formula:
 
-`cost = (vCPU * RamInGB / StorageInGb) * 100`
+`cost = (vCPU * RamInGB / StorageInGb) * 200`
 
 StorageInGB e RamInGB deve essere sempre espresso in potenze di 2.
 La gestione del costo è implementata tramite interfaccia Cost.
@@ -66,3 +66,11 @@ User is a Person
 Student is a User
 Business is a User
 Enterprise is a User
+
+RoadMap:
+
+1. Aggiungere Login
+2. Implementare Signup col DB
+3. Implementare il DB
+4. Aggiungere API per la gestione delle VM
+5. Aggiungere noVNC alla dashboard

@@ -3,7 +3,7 @@ export class Backend {
     this.hostname = hostname;
   }
 
-  async signUpStudent(event) {
+  async signupstudent(event) {
     const url = 'http://localhost:8080/api/signup/student';
 
     event.preventDefault(); // Prevent the default form submission
