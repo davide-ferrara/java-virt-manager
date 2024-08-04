@@ -20,7 +20,7 @@ sudo apt install libvirt-clients bridge-utils virt-manager
 sudo adduser $USER libvirt
 ```
 
-Verify that QEMU and libvirt are installed
+Verifica che QEMU e libvirt sono installati
 
 ```bash
 find /usr -name "libvirt.so*"

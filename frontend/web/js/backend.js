@@ -3,15 +3,28 @@ export class Backend {
     this.hostname = hostname;
   }
 
-  async signUpFormSubmit(event) {
+  async signUpStudent(event) {
+    const url = 'http://localhost:8080/api/signup/student';
+
     event.preventDefault(); // Prevent the default form submission
 
     const name = document.getElementById('inputName').value;
     const lastname = document.getElementById('inputLastname').value;
+    const dateOfBirth = document.getElementById('inputDateOfBirth').value;
+    const studentID = document.getElementById('inputstudentID').value;
+    const userName = document.getElementById('inputUserName').value;
+    const email = document.getElementById('inputEmail').value;
+    const password = document.getElementById('inputPassword').value;
 
-    const formObject = { name, lastname };
-
-    const url = 'http://localhost:8080/API/signup/student';
+    const formObject = {
+      name,
+      lastname,
+      dateOfBirth,
+      studentID,
+      userName,
+      email,
+      password,
+    };
 
     try {
       const response = await fetch(url, {

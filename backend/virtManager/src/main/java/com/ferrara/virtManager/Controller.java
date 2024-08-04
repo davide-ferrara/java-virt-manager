@@ -49,7 +49,7 @@ public class Controller {
     }
 
     @CrossOrigin(origins = frontenddbUrl)
-    @RequestMapping(method = RequestMethod.POST, value = "/API/signup/student")
+    @RequestMapping(method = RequestMethod.POST, value = "/api/signup/student")
     public void signup(@RequestBody Student student) {
         System.out.println(student);
     }

@@ -12,23 +12,22 @@ public class Student extends User {
         // Costruttore predefinito necessario per la deserializzazione
     }
 
-    public Student(String name, String lastname) {
-        super(name, lastname);
-    }
-
-    public Student(String name, String lastname, int studentID) {
-        super(name, lastname);
+    public Student(String name, String lastname, Date dateOfBirth, int studentID, String userName, String email,
+            String password) {
+        super(name, lastname, dateOfBirth, userName, email, password);
         this.studentID = studentID;
     }
 
-    public Student(String name, String lastname, Date dateOfBirth, String address, String userName, String email,
-            String password, String phoneNumber, int studentID) {
+    public Student(String name, String lastname, Date dateOfBirth, String address, int studentID, String userName,
+            String email,
+            String password, String phoneNumber) {
         super(name, lastname, dateOfBirth, address, userName, email, password, phoneNumber);
         this.studentID = studentID;
     }
 
-    public Student(String name, String lastname, Date dateOfBirth, String address, String userName, String email,
-            String password, String phoneNumber, int studentID, int academicYear,
+    public Student(String name, String lastname, Date dateOfBirth, String address, int studentID, String userName,
+            String email,
+            String password, String phoneNumber, int academicYear,
             int expGraduationYear) {
         super(name, lastname, dateOfBirth, address, userName, email, password, phoneNumber);
         this.studentID = studentID;
@@ -60,7 +59,7 @@ public class Student extends User {
         this.expGraduationYear = expGraduationYear;
     }
 
-    public int getCredtis() {
+    public int getCredits() {
         return this.credits;
     }
 
@@ -70,10 +69,10 @@ public class Student extends User {
 
     @Override
     public String toString() {
-        return String.format("Name: %s \nlastname: %s \nStudentID: %d \nUsername: %s \nEmail: %s \nCredits: %d",
-                getName(),
-                getLastname(), getStudentID(), getUserName(), getEmail(),
-                getCredtis());
+        return String.format(
+                "Name: %s \nLastname: %s \nDateOfBirth: %s \nAddress: %s \nStudentID: %d \nUsername: %s \nEmail: %s \nCredits: %d",
+                getName(), getLastname(), getDateOfBirth(), getAddress(), getStudentID(), getUserName(), getEmail(),
+                getCredits());
     }
 
 }

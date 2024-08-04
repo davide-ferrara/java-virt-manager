@@ -61,10 +61,6 @@ public class VirtManagerApplication {
 		 * }
 		 */
 
-		Student s1 = new Student("Davide", "Ferrara", 518629);
-
-		System.out.println(s1.toString());
-
 		SpringApplication.run(VirtManagerApplication.class, args);
 
 	}
