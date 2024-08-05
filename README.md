@@ -39,11 +39,11 @@ sudo virsh net-start default
 Le classi individuate al momento sono:
 
 1. Person
-2. Student, estende Person
-3. User, estente Peron
+2. Student, extend Person
+3. User, extend Peron
 4. Organization
-5. Enterprise, estende Organization
-6. Business, estende Organization
+5. Enterprise, extend Organization
+6. Business, extend Organization
 7. Controller, per la gestione degli ENDPOINT
 8. CorsConfig, per la gestione del CORS
 9. QEMU la classe per la gestione dell'hypervisor
@@ -74,3 +74,7 @@ RoadMap:
 3. Implementare il DB
 4. Aggiungere API per la gestione delle VM
 5. Aggiungere noVNC alla dashboard
+
+Link utili:
+`https://www.ibm.com/it-it/topics/rest-apis`
+`https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/`
