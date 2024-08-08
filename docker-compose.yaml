@@ -6,7 +6,7 @@ services:
     ports:
       - '6969:80'
     volumes:
-      - ./frontend/web:/usr/share/nginx/html
+      - ./client/web:/usr/share/nginx/html
     networks:
       - network
 

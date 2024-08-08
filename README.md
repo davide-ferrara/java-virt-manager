@@ -78,3 +78,6 @@ RoadMap:
 Link utili:
 `https://www.ibm.com/it-it/topics/rest-apis`
 `https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/`
+`https://www.javaguides.net/2019/08/spring-boot-spring-data-jpa-postgresql-example.html`
+`https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html`
+`https://medium.com/@iampraveenkumar/mastering-jpa-inheritance-strategies-hibernate-6-x-jpa-3-x-spring-boot-3-x-06eecac1147a`
